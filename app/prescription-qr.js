@@ -15,7 +15,7 @@ export default function PrescriptionQr({ prescriptionId }) {
     // important locally because a phone cannot resolve the desktop's
     // localhost address.
     const appBaseUrl = process.env.NEXT_PUBLIC_APP_BASE_URL || window.location.origin;
-    const verificationUrl = `${appBaseUrl}/verify/${encodeURIComponent(prescriptionId)}`;
+    const verificationUrl = `${appBaseUrl}/verify?prescriptionId=${encodeURIComponent(prescriptionId)}`;
 
     QRCode.toDataURL(verificationUrl, {
       color: {

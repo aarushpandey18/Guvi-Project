@@ -78,7 +78,7 @@ router.post("/upload", upload.single("file"), async (req, res, next) => {
     return res.status(201).json({
       message: "Prescription saved",
       prescriptionId,
-      verificationPath: `/verify/${prescriptionId}`,
+      verificationPath: `/verify?prescriptionId=${encodeURIComponent(prescriptionId)}`,
       data: {
         ...prescription,
         verified: true,

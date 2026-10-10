@@ -32,7 +32,7 @@ Returns API status.
 ### `POST /api/prescriptions/upload`
 
 Saves a prescription and generates a unique `prescriptionId`.
-The response also includes `verificationPath`, which can be encoded into a QR code by the frontend.
+The response also includes `verificationPath` (`/verify?prescriptionId=...`), which can be encoded into a QR code by the frontend.
 Send this route as `multipart/form-data` with an optional `file` field for PDF/JPG/PNG/WEBP uploads.
 
 ```json
