@@ -76,7 +76,7 @@ function Login({ login, setLogin, onSubmit, toast }) {
   </section><section className="login-card">
     <div className="login-heading"><p className="eyebrow">Welcome back</p><h1>Sign in to your workspace</h1><p>Manage care, appointments and patient records in one place.</p></div>
     <div className="role-switcher">{Object.keys(roles).map((role) => <button key={role} className={login.role === role ? "selected" : ""} onClick={() => setLogin({ ...login, role })}>{roles[role].label}</button>)}</div>
-    <form onSubmit={onSubmit} className="form-stack"><label>User ID <span className="field-note">Optional for demo</span><input className="input" value={login.id} onChange={(e) => setLogin({ ...login, id: e.target.value })} placeholder={selected.id} /></label><button className="button-primary wide"><LogIn size={17} /> Continue as {selected.label}</button></form>
+    <form onSubmit={onSubmit} className="form-stack"><label>User ID <span className="field-note">Optional for demo</span><input className="input" value={login.id} onChange={(e) => setLogin({ ...login, id: e.target.value })} placeholder={`e.g. ${selected.id}`} /></label><button className="button-primary wide"><LogIn size={17} /> Continue as {selected.label}</button></form>
     <p className="demo-hint">Demo access: click a role and continue. No password required.</p>
     {toast && <p className="error-text">{toast}</p>}
   </section></div></main>;

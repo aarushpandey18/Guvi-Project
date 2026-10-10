@@ -326,55 +326,57 @@ td { border-top-color: #edf2ef; color: #3f554c; }
 .toast { color: #fff; background: #34745c; border: 0; box-shadow: 0 8px 22px #243b3626; }
 
 .login-page {
-  padding: 28px;
+  padding: 24px;
   background: #f8faf9;
 }
 .login-layout {
-  grid-template-columns: minmax(330px, .82fr) minmax(400px, 1.18fr);
-  width: min(100%, 980px);
-  min-height: 570px;
+  grid-template-columns: minmax(360px, .9fr) minmax(440px, 1.1fr);
+  width: min(100%, 1080px);
+  min-height: 600px;
   border: 1px solid #e0e8e3;
   border-radius: 12px;
   background: #fff;
-  box-shadow: 0 10px 30px #243b3610;
+  box-shadow: 0 12px 32px #243b3610;
 }
 .login-promo {
-  padding: 38px 40px;
+  padding: 44px 46px;
   background: #edf6f0;
 }
 .login-promo .brand-mark { color: #34745c; background: #e1f0e8; }
 .login-promo .brand strong { color: #243b36; }
 .login-promo .brand span:not(.brand-mark) { color: #64756d; }
-.promo-copy { max-width: 360px; margin-top: 0; }
+.promo-copy { max-width: 390px; margin-top: 8px; }
 .promo-copy h1 {
-  max-width: 360px;
-  margin: 12px 0 15px;
+  max-width: 390px;
+  margin: 14px 0 16px;
   color: #243b36;
-  font-size: clamp(28px, 3vw, 37px);
-  line-height: 1.16;
-  letter-spacing: -.8px;
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.18;
+  letter-spacing: -.7px;
 }
-.promo-copy p:last-of-type { color: #64756d; }
-.promo-list { color: #3f554c; }
+.promo-copy p:last-of-type { max-width: 350px; color: #64756d; line-height: 1.65; }
+.promo-list { gap: 13px; color: #3f554c; }
 .promo-list svg, .secure-label svg { color: #34745c; }
 .promo-footer { color: #71837a; }
 .secure-label { color: #34745c; }
 .login-card {
-  padding: 62px 72px;
+  padding: 64px 76px;
   border-left: 1px solid #e0e8e3;
   background: #fff;
 }
-.login-heading h1 { color: #243b36; font-size: 27px; }
+.login-heading { max-width: 520px; }
+.login-heading h1 { color: #243b36; font-size: 28px; }
 .login-heading p:last-child { color: #64756d; }
 .login-card .eyebrow { color: #34745c; }
-.role-switcher { background: #f3f7f4; border-color: #e0e8e3; }
+.role-switcher { margin-bottom: 24px; background: #f3f7f4; border-color: #e0e8e3; }
 .role-switcher button { color: #64756d; }
+.role-switcher button:hover { color: #34745c; }
 .role-switcher button.selected { color: #34745c; background: #fff; box-shadow: 0 1px 3px #243b3614; }
 .login-card label { color: #4f655b; }
-.login-card .input { color: #243b36; border-color: #d2dfd8; background: #fff; }
+.login-card .input { min-height: 49px; color: #243b36; border-color: #d2dfd8; background: #fff; }
 .login-card .input:focus { border-color: #34745c; box-shadow: 0 0 0 3px #34745c18; }
-.login-card .demo-hint { color: #64756d; border-color: #dce9e0; background: #f4f9f5; }
-.login-card .button-primary { color: #fff; background: #34745c; }
+.login-card .demo-hint { margin-top: 18px; padding: 10px 0 0; border-top: 1px solid #e0e8e3; color: #71837a; background: transparent; }
+.login-card .button-primary { min-height: 49px; color: #fff; background: #34745c; }
 .login-card .button-primary:hover { background: #285d49; }
 .field-note { color: #7c8c84; }
 
@@ -382,7 +384,7 @@ td { border-top-color: #edf2ef; color: #3f554c; }
   .login-page { padding: 16px; }
   .login-layout { grid-template-columns: 1fr; }
   .login-promo { min-height: 310px; padding: 30px; }
-  .login-card { padding: 38px 30px; border-top: 1px solid #e0e8e3; border-left: 0; }
+  .login-card { padding: 42px 30px; border-top: 1px solid #e0e8e3; border-left: 0; }
 }
 @media (max-width: 560px) {
   .page-body { padding: 24px 16px; }
